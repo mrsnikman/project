@@ -1,5 +1,5 @@
 .page_header{
-
+    text-align: center;
     @support (backdrop-filter: blur(10px)){
         backdrop-filter: blur(10px);
         background-color: rbga;
