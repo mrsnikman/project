@@ -9,6 +9,7 @@
     .container{
         color: blue;
         font-family: verdana;
+        display: block;
     }
 }
 .main_page{
