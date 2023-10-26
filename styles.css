@@ -10,10 +10,20 @@
         color: blue;
         font-family: verdana;
         display: block;
+        text-decoration: none;
     }
 }
 .main_page{
     .container{
         font-family: verdana;
+    }
+}
+
+.page_footer{
+    color: black;
+    text-align: center;
+    font-family: verdana;
+    .name{
+        color: red;
     }
 }
