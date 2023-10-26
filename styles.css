@@ -1,7 +1,14 @@
-
 .page_header{
+
+    @support (backdrop-filter: blur(10px)){
+        backdrop-filter: blur(10px);
+        background-color: rbga;
+    }    
+}
+
+.page_header1{
     color: black;
-    text-align: center;
+    text-align: left;
     font-family: verdana;
 }
 
@@ -14,6 +21,8 @@
     }
 }
 .main_page{
+    padding-top: 1%;
+    padding-bottom: 1%;
     .container{
         font-family: verdana;
     }
