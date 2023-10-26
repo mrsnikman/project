@@ -1,5 +1,18 @@
+
 .page_header{
+    color: black;
+    text-align: center;
+    font-family: verdana;
+}
+
+.main_header{
     .container{
         color: blue;
+        font-family: verdana;
+    }
+}
+.main_page{
+    .container{
+        font-family: verdana;
     }
 }
