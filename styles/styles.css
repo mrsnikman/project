@@ -7,12 +7,62 @@
 }
 
 .page-header{
-    @support (backdrop-filter: blur(10px)){
-        backdrop-filter: blur(10px);
-        background-color: rbga;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+}
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rbga(222, 222, 222, 0.50);
+    @supports (backdrop-filter: blur(20px)){
+        backdrop-filter: blur(20px);
+        background-color: rbga(222, 222, 222, 0.50);
     }
-    
-    
+}
+
+.page-header__container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+}
+
+.page-header__logo{
+    display: inline-block;
+    margin-right: 230px;
+    width: 202px;
+    height: 147px;
+}
+
+.page-header__logo__img{
+    width: 100%;
+    height: 100%;
+}
+
+.page-header__nav {
+    display: inline-block;
+}
+
+.btn_page-header__user-btn {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 1px solid #1f1e1e;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #1f1e1e;
 }
 
 .page-header__nav-link{
@@ -22,6 +72,60 @@
     font-weight: 600;
     line-height: 25px;
     text-decoration: none;     
+}
+
+.home{
+    padding-top: 147px;
+}
+
+.main-header{
+    padding: 100px 0;
+}
+
+.main-header__title,
+.main-header__text {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-family: 'Lora', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: normal;
+    color: #1f1e1e;
+    text-transform: uppercase;
+}
+
+.main-header__title{
+    margin: 0 0 70px;
+}
+
+.main-header__text {
+    margin: 0 auto;
+    max-width: 948px;
+    width: 100%;
+}
+
+.main-header__picture {
+    display: block;
+    margin-bottom: 70px;
+    position: relative;
+    width: 100%;
+}
+
+.main-header__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-header__picture::before {
+    content:'';
+    display: block;
+    width: 100%;
+    padding-top: 16.927%;
 }
 
 .page-footer{
